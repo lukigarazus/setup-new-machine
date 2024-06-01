@@ -33,7 +33,7 @@ cp -f ./karabiner.json ~/.config/karabiner
 
 brew install kitty
 brew install neovim
-cp -r ./nvim ~/.config/
+cp -r ./nvim-new ~/.config/nvim/
 # once you install neovim you will probably need to relaunch the terminal as node will not be available to install some of the lazyvim plugins
 
 brew install raycast
