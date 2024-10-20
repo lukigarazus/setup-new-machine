@@ -1,0 +1,17 @@
+return {
+  { "elentok/format-on-save.nvim" },
+  {
+    "elentok/format-on-save.nvim",
+    opts = function()
+      local formatters = require("format-on-save.formatters")
+      return {
+        formatter_by_ft = {
+          typescript = {
+            formatters.prettierd,
+          },
+          typescriptreact = formatters.prettierd,
+        },
+      }
+    end,
+  },
+}
